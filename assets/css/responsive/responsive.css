@@ -1,0 +1,173 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header_area {
+    height: 70px;
+    padding: 0 30px;
+  }
+
+  .navbar-toggler {
+    margin: 18px 0;
+  }
+
+  .navbar-toggler span {
+    color: #fff;
+  }
+
+  .is-sticky .navbar-toggler span {
+    color: #000;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header_area {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .navbar-toggler {
+    margin: 18px 0;
+  }
+
+  .navbar-toggler span {
+    color: #fff;
+  }
+
+  .is-sticky .navbar-toggler span {
+    color: #000;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+  }
+}
+
+/*********** Very small devices like mine.....hahaha **********/
+@media (min-width: 240px) and (max-width: 319px) {
+  .header_area {
+    height: 60px;
+    padding: 0 3px;
+  }
+
+  .navbar-toggler {
+    margin: 18px 0;
+  }
+
+  .navbar-toggler span {
+    color: #fff;
+  }
+
+  .is-sticky .navbar-toggler span {
+    color: #000;
+    margin-left: -10px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+  }
+}
+
+/*-------------------- Login Area ---------------------*/
+
+@media (max-width: 992px) {
+  .wrap-login100 {
+    padding: 33px 95px 33px 95px;
+  }
+
+  .login100-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-login100 {
+    padding: 33px 95px 33px 95px;
+  }
+
+  .login100-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 33px 15px 33px 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  form .icons {
+    position: absolute;
+    right: 76px;
+    top: 67.2%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  .icons span {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    display: none;
+    text-align: center;
+  }
+
+  .icons span.icon1 {
+    margin-top: -5px;
+    color: #e74c3c;
+    border-color: #e74c3c;
+  }
+
+  .icons span.icon2 {
+    margin-top: 40px;
+    color: #27ae60;
+    border-color: #27ae60;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1045px) {
+  form .icons {
+    position: absolute;
+    right: 176px;
+    top: 67.2%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 1046px) and (max-width: 1162px) {
+  form .icons {
+    position: absolute;
+    right: 206px;
+    top: 67.2%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 1163px) and (max-width: 1285px) {
+  form .icons {
+    position: absolute;
+    right: 242px;
+    top: 67.2%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+}
+
+/*-------------------- Login Area End ---------------------*/
+
+
+@media only screen and (max-width: 384px) {}
+
+@media (min-width: 768px) and (max-width: 1300px) {}
