@@ -73,7 +73,7 @@ if (isset($_GET["id"]) && !empty(trim($_GET["id"]))) {
 	<div class="">
 		<div class="container-login100">
             <div class="d-flex justify-content-between">
-            <a href="dashboard.php" class="btn btn-default">
+            <a href="admins.php" class="btn btn-default">
                 <i class="fa fa-long-arrow-left"></i> Exit
             </a>
             </div>

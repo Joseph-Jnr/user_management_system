@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Mar 03, 2021 at 12:30 PM
+-- Generation Time: Mar 15, 2021 at 09:42 PM
 -- Server version: 5.5.42
 -- PHP Version: 7.0.8
 
@@ -27,16 +27,14 @@ CREATE TABLE `admins` (
   `password` varchar(255) NOT NULL,
   `img` blob NOT NULL,
   `lastlogin` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `admins`
 --
 
 INSERT INTO `admins` (`id`, `name`, `email`, `password`, `img`, `lastlogin`) VALUES
-(1, 'Donald Wilson', 'donald@gmail.com', '$2y$10$0xmG.7wdbxYb67atYo68ZOf7noNJoQmXD/82b87TIOC5Mkhvlac.2', 0x32303230303132305f3134343433392e6a706567, '2021-03-03 12:26:30'),
-(2, 'Jonathan Baker', 'jonathan@mail.com', '$2y$10$BnJg9d0aZV.o6bIPlTdQCeQaiX6pzGHMpJBuZP1kFUXWhcbppkPSG', 0x32303230303132305f3134343433352e6a706567, '2021-03-03 07:24:12'),
-(3, 'Koko Bass', 'koko@gmail.com', '$2y$10$YzEJ4xN6QmUlXCSU3/4PjuKeA16NKXKHqwxDgt7Faxb4C4xXqVq3u', 0x627573696e6573732d766973696f6e2d73746174656d656e742d6f7267616e697a6174696f6e2d636f6d70616e792d766973696f6e2d35313133666462356637343836353164613837373134366165653537663063342e706e67, NULL);
+(1, 'Donald Wilson', 'dona@mail.com', '$2y$10$rgrp8nnRdl241JOX2TZB0.azyVqLGX/nR7e6wjx7TxtaRVjtdHPV.', 0x3337302d333730303932365f3135307831353078676e65742d636f72652d76616c7565732d69636f6e732d323031372d70617373696f6e2d707269766174652d6c696d697465642e706e67, '2021-03-15 21:41:23');
 
 -- --------------------------------------------------------
 
@@ -50,15 +48,7 @@ CREATE TABLE `users` (
   `uid` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `img` blob NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `uid`, `email`, `img`) VALUES
-(1, 'Alan Walker', 'R001234', 'alan@gmail.com', 0x3232353635313934366233336332622e6a7067),
-(2, 'Greg Milton', 'R183025', 'greg@mail.com', 0x3132383070782d466c61675f6f665f4175737472616c69612e7376672e706e67);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
@@ -84,9 +74,9 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT;

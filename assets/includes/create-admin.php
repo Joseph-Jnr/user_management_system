@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Records created successfully. Redirect to landing page
         move_uploaded_file($_FILES['img']['tmp_name'], $target);
 
-        header("location: ../../dashboard.php?created=success");
+        header("location: ../../admins.php?created=success");
         exit();
 
       } else {
@@ -159,11 +159,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             <input type="hidden" name="size" value="1000000">
             <div class="wrap-input100 <?php echo (!empty($img_err)) ? 'has-error' : ''; ?>">
-              <input class="input100" type="file" name="img" placeholder="image" value="<?php echo $img; ?>"/>
+
+              <label class="btn btn-primary btn-md btn-file col-12">
+              <span class="fa fa-image"></span> Choose an image<input class="input100" type="file" name="img" value="<?php echo $img; ?>" hidden>
+              </label>
               <span class="focus-input100"></span>
-              <span class="symbol-input100">
-                <i class="fa fa-camera" aria-hidden="true"></i>
-              </span>
             </div>
             <span class="help-block"><?php echo $img_err; ?></span>
 
@@ -174,7 +174,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div class="text-center p-t-12">
-              <a class="txt2" href="../../dashboard.php">
+              <a class="txt2" href="../../admins.php">
                 <i class="fa fa-long-arrow-left"></i> Exit
               </a>
             </div>

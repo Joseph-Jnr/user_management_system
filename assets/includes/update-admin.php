@@ -57,7 +57,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
                 // Records updated successfully. Redirect to landing page
 
                 if (move_uploaded_file($_FILES['img']['tmp_name'], $target)) {
-                    header("location: ../../dashboard.php?updated=success");
+                    header("location: ../../admins.php?updated=success");
                     exit();
                 } else {
                     $img_err = "<p style='color:brown'>Select an image</p>";
@@ -189,7 +189,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
             </div>
 
             <div class="text-center p-t-12">
-              <a class="txt2" href="../../dashboard.php">
+              <a class="txt2" href="../../admins.php">
                 <i class="fa fa-long-arrow-left"></i> Exit
               </a>
             </div>

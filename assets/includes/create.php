@@ -182,11 +182,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             <input type="hidden" name="size" value="1000000">
             <div class="wrap-input100 <?php echo (!empty($img_err)) ? 'has-error' : ''; ?>">
-              <input class="input100" type="file" name="img" placeholder="image" value="<?php echo $img; ?>"/>
+
+              <label class="btn btn-primary btn-md btn-file col-12">
+              <span class="fa fa-image"></span> Choose an image<input class="input100" type="file" name="img" value="<?php echo $img; ?>" hidden>
+              </label>
               <span class="focus-input100"></span>
-              <span class="symbol-input100">
-                <i class="fa fa-camera" aria-hidden="true"></i>
-              </span>
             </div>
             <span class="help-block"><?php echo $img_err; ?></span>
 

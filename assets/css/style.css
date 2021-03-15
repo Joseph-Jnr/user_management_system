@@ -39,6 +39,14 @@
     background: var(--bg-custom);
 }
 
+.text-custom {
+    color: var(--text-custom);
+}
+
+.text-custom:hover {
+    color: var(--text-custom);
+}
+
 a,
 a:hover {
     text-decoration: none;
@@ -80,6 +88,38 @@ a:hover {
     padding: 15px;
     background: var(--bg-primary);
     background-size: cover;
+}
+
+.custom-container {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: var(--bg-primary);
+    background-size: cover;
+}
+
+.custom-wrap {
+    width: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 33px 95px 33px 95px;
 }
 
 .wrap-login100 {
@@ -321,6 +361,7 @@ header .brand h1 {
 
 .msg-alert {
     background: #fff;
+    border-left: 6px solid rgb(94, 172, 94);
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
@@ -359,4 +400,15 @@ header .brand h1 {
 #filter-search input[placeholder] {
     width: 256px;
     margin-left: 20px;
+}
+
+.btn-file,
+.btn-file:hover,
+.btn-file:focus {
+    background: var(--bg-primary);
+    color: rgb(71, 69, 69);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 34px;
 }
